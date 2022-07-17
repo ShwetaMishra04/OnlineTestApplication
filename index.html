@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Test</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    
+        <div class="container">
+            <div class="leftSide">
+               <img src="https://api.gretchenrubin.com/wp-content/uploads/sites/2/2014/03/quiz-.jpg.jpg"alt="quiz logo"class="tilt">
+            </div>
+        <div class="rightSide"><br>
+            <h1>Welcome to Online Test Application</h1>
+            <h5>Developer Shweta Mishra</h5><br>
+            <ul style="list-style-type:circle">
+                
+                <li><b>Frontend Quiz</b></li>
+                <li><b>Consist of 10 questions</b>
+                    <div class="start_btn"><button onclick="window.location='test.html';">Start Test</button>
+                    </li>
+                
+            </ul>
+    
+    
+    </div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Test</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Test while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Online Test Application</div>
+            
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Test!</div>
+        <div class="score_text">
+          
+        </div>
+        <div class="buttons">
+            <button class="restart">Re-play Test</button>
+            <button class="quit">Quit Test</button>
+           
+        </div>
+        <div class ="buttons">
+            <button class="answers" onclick="window.location='answers.html';">See Answers</button>
+           
+           
+        </div>
+
+    </div>
+
+   
+    <script src="js/questions.js"></script>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
